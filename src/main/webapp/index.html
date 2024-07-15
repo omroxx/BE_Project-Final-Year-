@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+         body {
+            background-image: url('https://media.istockphoto.com/id/870402320/photo/a-social-worker-meeting-with-a-group-of-villagers.jpg?s=612x612&w=0&k=20&c=2JlS1vqg4pU5lCp8oiFXjVgMPlHbhrmH4wmtRJdq384=');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .navbar {
+            background-color: #2c3e50; /* Advanced color */
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #ecf0f1; /* Advanced color */
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #3498db; /* Advanced color on hover */
+            color: #fff; /* Advanced color on hover */
+        }
+        .footer {
+            background-color: #2c3e50; /* Advanced color */
+            color: #ecf0f1; /* Advanced color */
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .event-container {
+            padding: 80px 20px 20px; /* Adjusted padding to accommodate fixed navbar */
+        }
+        .event-card {
+            margin-bottom: 20px;
+            border: 2px solid #34495e; /* Advanced color */
+            border-radius: 10px;
+            padding: 15px;
+            background-color: #ecf0f1; /* Advanced color */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s ease-in-out;
+        }
+        .event-card:hover {
+            transform: translateX(10px);
+        }
+        .event-card img {
+            width: 100%;
+            height: 200px; /* Adjusted height for uniformity */
+            object-fit: cover;
+            border-bottom: 1px solid #bdc3c7; /* Advanced color */
+            margin-bottom: 10px;
+        }
+        .event-card h3 {
+            color: #34495e; /* Advanced color */
+        }
+        .event-card p {
+            color: #7f8c8d; /* Advanced color */
+        }
+        .event-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+        .btn-primary,
+        .btn-success {
+            transition: transform 0.2s ease-in-out;
+        }
+        .btn-primary:hover,
+        .btn-success:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="admin.html">Admin</a>
+    <a href="donorloginreg.html">Donor</a>
+    <a href="ngologreg.html">NGO</a>
+    <a href="aboutus.html">About</a>
+    <a href="contactus.html">Contact Us</a>
+</div>
+
+<div class="event-container">
+    <h1>Welcome to Our NGO</h1>
+    <p>We are dedicated to making a positive impact in the world.</p>
+
+    <!-- Event Section -->
+    <div class="row">
+        <div class="col-lg-4 event-card">
+            <img src="data:image/jpeg;base64,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" class="img-fluid" alt="Event 1">
+            <h3>Event Help</h3>
+            <p>Description of Event 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="event-buttons">
+                <button class="btn btn-primary">Participate</button>
+                <button class="btn btn-success">Donate</button>
+            </div>
+        </div>
+
+        <div class="col-lg-4 event-card">
+            <img src="data:image/jpeg;base64,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" class="img-fluid" alt="Event 2">
+            <h3>Event Youth</h3>
+            <p>Description of Event 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="event-buttons">
+                <button class="btn btn-primary">Participate</button>
+                <button class="btn btn-success">Donate</button>
+            </div>
+        </div>
+
+        <div class="col-lg-4 event-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgMQ1GMFky_NDq-yoo-3daFjPRfh_QqGSA8g&usqp=CAU" class="img-fluid" alt="Event 3">
+            <h3>Event Save Nature</h3>
+            <p>Description of Event 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="event-buttons">
+                <button class="btn btn-primary">Participate</button>
+                <button class="btn btn-success">Donate</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    &copy; 2023 Our NGO. All rights reserved.
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

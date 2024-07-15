@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin</title>
+<style type="text/css">
+ body {
+            background-image: url('https://media.istockphoto.com/id/870402320/photo/a-social-worker-meeting-with-a-group-of-villagers.jpg?s=612x612&w=0&k=20&c=2JlS1vqg4pU5lCp8oiFXjVgMPlHbhrmH4wmtRJdq384=');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+.loginbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #000;
+   width:320px;
+   height: 420px;
+   color:#fff;
+   box-sizing:border-box;
+   padding:70px;
+}
+/* .avtar{
+width:100px;
+hight:100px;
+border-radius:50%;
+postition:absolute;
+top:-50px;
+left:calc(50% -50px);
+ } */
+form {
+  width: 50%; 
+  text-align: center;
+  
+}
+h1{
+margin:0;
+padding:0 0 20px;
+text-align: center;
+font-size: 22px;
+
+}
+.loginbox p{
+margin:0;
+padding: 0;
+font-weight: bold;
+
+}
+.loginbox input{
+width:100%;
+margin-bottom: 20px;
+}
+.loginbox input[type="text"],input[type="password"]
+{   border:none;
+border-bottom: 1px solid #fff;
+background: transparent;
+outline: none;
+height: 40px;
+color: #fff;
+font-size: 16px;
+}
+.loginbox input[type="submit"] {
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #fb2525;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+	
+}
+.loginbox input[type="submit"]:hover
+{cursor: pointer;
+background: #ffc107;
+color: #000;
+}
+
+.loginbox a{
+text-decoration: none;
+font-size: 12px;
+line-height: 20px;
+color:darkgrey;
+}
+</style>
+</head>
+<body>
+<div class="loginbox">
+<!-- <img alt="avtar" src="https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=612x612&w=0&k=20&c=yBeyba0hUkh14_jgv1OKqIH0CCSWU_4ckRkAoy2p73o=" class="avtar">
+ --><h1>Admin Login Here</h1>
+
+    <form action="alogins" method="post">
+       <p>Adminemail:</p>
+        <input type="text"   id="username" name="aemail" placeholder="Enter adminname" required><br>
+
+        <p>Password:</p>
+        <input type="password" id="password" name="apass" placeholder="Enter password" required><br>
+
+        <input type="submit" value="Login">
+        <button style="background-color: crimson;color: white;border: none;padding: 10px 20px;"><a href="index.html">back</a></button>
+          
+    </form>
+    </div>
+</body>
+</html>
